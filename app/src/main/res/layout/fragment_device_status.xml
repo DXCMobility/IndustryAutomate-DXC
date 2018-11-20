@@ -1,0 +1,678 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/statusItem"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Factory 1"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_marginTop="15dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/statusCard"
+                    >
+
+                    <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:background="#F4F6F7"
+                    android:padding="5dp">
+
+                    <Switch
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_assembly"
+                        android:theme="@style/BrandedSwitch"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/conveyor"
+                            android:id="@+id/img1"
+                            />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_toRightOf="@+id/img1"
+
+                            android:id="@+id/rel1">
+                            <TextView
+                                android:id="@+id/assembly_line1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Assembly Line"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerInParent="true"
+                                />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/status1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_below="@+id/img1"/>
+                        <TextView
+                            android:id="@+id/ok1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OK"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/rel1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="35dp"/>
+                        <TextView
+                            android:id="@+id/power1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Power"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/status1"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:id="@+id/kw1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200Kw"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/ok1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/load_card"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:background="#F4F6F7">
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switch_loads"
+                            android:theme="@style/BrandedSwitch"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulb1"
+                                android:id="@+id/img2"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_toRightOf="@+id/img2"
+                                android:id="@+id/rel2">
+                                <TextView
+                                    android:id="@+id/loads"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loads"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/status2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/img2"/>
+                            <TextView
+                                android:id="@+id/ok2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OK"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/rel2"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="35dp"/>
+                            <TextView
+                                android:id="@+id/power2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/status2"
+                                android:layout_marginTop="3dp"
+                                />
+                            <TextView
+                                android:id="@+id/kw2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200Kw"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/ok2"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/cooling_card"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:background="#F4F6F7">
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switch_cooling"
+                            android:theme="@style/BrandedSwitch"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/fannn"
+                                android:id="@+id/img3"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_toRightOf="@+id/img3"
+                                android:id="@+id/rel3">
+                                <TextView
+                                    android:id="@+id/cooling_sys"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cooling System"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/status3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/img3"/>
+                            <TextView
+                                android:id="@+id/ok3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OK"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/rel3"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="35dp"/>
+                            <TextView
+                                android:id="@+id/power3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/status3"
+                                android:layout_marginTop="3dp"
+                                />
+                            <TextView
+                                android:id="@+id/kw3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200Kw"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/ok3"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Factory 2"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_marginTop="15dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/cooling2_card"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:background="#F4F6F7">
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switch_cooling1"
+                            android:theme="@style/BrandedSwitch"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/fannn"
+                                android:id="@+id/img4"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_toRightOf="@+id/img4"
+                                android:id="@+id/rel4">
+                                <TextView
+                                    android:id="@+id/cooling2_sys"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cooling System"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/status4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/img4"/>
+                            <TextView
+                                android:id="@+id/ok4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OK"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/rel4"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="35dp"/>
+                            <TextView
+                                android:id="@+id/power4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/status4"
+                                android:layout_marginTop="3dp"
+                                />
+                            <TextView
+                                android:id="@+id/kw4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200Kw"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/ok4"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/alarm_card"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:background="#F4F6F7">
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switch_alarm"
+                            android:theme="@style/BrandedSwitch"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/alarm1"
+                                android:id="@+id/img5"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_toRightOf="@+id/img5"
+                                android:id="@+id/rel5">
+                                <TextView
+                                    android:id="@+id/alarm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Alarm"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/status5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/img5"/>
+                            <TextView
+                                android:id="@+id/ok5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OK"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/rel5"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="35dp"/>
+                            <TextView
+                                android:id="@+id/power5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/status5"
+                                android:layout_marginTop="3dp"
+                                />
+                            <TextView
+                                android:id="@+id/kw5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200Kw"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/ok5"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/load2_card"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:background="#F4F6F7">
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/switch_load1"
+                            android:theme="@style/BrandedSwitch"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulb1"
+                                android:id="@+id/img6"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_toRightOf="@+id/img6"
+                                android:id="@+id/rel6">
+                                <TextView
+                                    android:id="@+id/loads2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loads"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/status6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/img6"/>
+                            <TextView
+                                android:id="@+id/ok6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OK"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/rel6"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="35dp"/>
+                            <TextView
+                                android:id="@+id/power6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Power"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/status6"
+                                android:layout_marginTop="3dp"
+                                />
+                            <TextView
+                                android:id="@+id/kw6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200Kw"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/ok6"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/power_house"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4F6F7"
+                    >
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/powerssss"
+                                android:layout_margin="5dp"
+                                android:id="@+id/img7"/>
+                        <TextView
+                            android:id="@+id/powerhouse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Power House"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="100dp"
+                            android:layout_toRightOf="@id/img7"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/powerhouse"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                       android:layout_marginLeft="800dp"
+                       android:text="Generating Power      434Kw"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

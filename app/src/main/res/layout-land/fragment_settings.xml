@@ -1,0 +1,181 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="example.com.industrialautomation.fragments.Settings">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APP Setting"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/push_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Push Notification"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <Switch
+                android:id="@+id/switchbutton1"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:maxHeight="10dp"
+                android:minWidth="100dp"
+                android:switchMinWidth="56dp"
+                android:theme="@style/BrandedSwitch"
+                android:thumbTextPadding="25dp" />
+
+            <TextView
+                android:id="@+id/soundeffect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/push_notification"
+                android:layout_marginTop="16dp"
+                android:text="Sound Effect"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <Switch
+                android:id="@+id/switchbutton2"
+                android:layout_width="120dip"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/switchbutton1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:maxHeight="10dp"
+                android:minWidth="100dp"
+                android:switchMinWidth="56dp"
+                android:theme="@style/BrandedSwitch"
+                android:thumbTextPadding="25dp" />
+
+            <TextView
+                android:id="@+id/vibration_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/soundeffect"
+                android:layout_marginTop="17dp"
+                android:text="Vibration Alert"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <Switch
+                android:id="@+id/switchbutton3"
+                android:layout_width="120dip"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/switchbutton2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:maxHeight="10dp"
+                android:minWidth="100dp"
+                android:switchMinWidth="56dp"
+                android:theme="@style/BrandedSwitch"
+                android:thumbTextPadding="25dp" />
+
+            <ImageView
+                android:id="@+id/dotline"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignEnd="@+id/switchbutton3"
+                android:layout_alignRight="@+id/switchbutton3"
+                android:layout_below="@+id/switchbutton3"
+                android:layout_marginTop="20dp"
+                android:layerType="software"
+                android:src="@drawable/dotted" />
+
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dotline"
+                android:layout_marginTop="20dp"
+                android:text="Privacy"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dotline"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+            <TextView
+                android:id="@+id/aboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/privacy"
+                android:layout_marginTop="15dp"
+                android:text="About Us"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/right_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/right_arrow"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus"
+                android:layout_marginTop="15dp"
+                android:text="Profile"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/right_arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/right_arrow1"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.industrialautomation.fragments.Feedback">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell the RPR team what you think"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/multilineEdittext"
+            android:layout_marginTop="10dp"
+            android:lines="6"
+            android:gravity="top|left"
+            android:background="#fff"
+            android:hint="Add Comment"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Comment"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:id="@+id/send_comment"
+               />
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:background="#01a982"
+                android:layout_toLeftOf="@+id/send_comment"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/reset_button"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

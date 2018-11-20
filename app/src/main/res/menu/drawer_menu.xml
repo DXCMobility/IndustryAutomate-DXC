@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard_id"
+            android:title="DASHBOARD"
+            android:icon="@drawable/dashboard">
+        </item>
+        <item
+            android:id="@+id/devicestatus_id"
+            android:title="DEVICE STATUS"
+            android:icon="@drawable/devices">
+        </item>
+        <item
+            android:id="@+id/intellisense_id"
+            android:title="INTELLISENSE"
+            android:icon="@drawable/intellisense">
+        </item>
+        <item
+            android:id="@+id/feedback_id"
+            android:title="FEEDBACK"
+            android:icon="@drawable/feedback">
+        </item>
+        <item
+            android:id="@+id/settings_id"
+            android:title="SETTINGS"
+            android:icon="@drawable/settings">
+        </item>
+    </group>
+
+</menu>

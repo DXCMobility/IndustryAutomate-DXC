@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:padding="10dp"
+    tools:context="example.com.industrialautomation.fragments.Settings">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="5dp"
+          >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Pushinggggg Notification"
+              android:layout_marginTop="10dp"
+              android:textColor="#fff"
+              android:id="@+id/push_notification"/>
+
+          <Switch
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:id="@+id/switchbutton1"
+            />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Push Notification"
+              android:layout_marginTop="50dp"
+              android:textColor="#fff"
+              android:id="@+id/push_notification1"/>
+
+
+         <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sound Effect"
+              android:textColor="#fff"
+              android:layout_below="@id/push_notification"
+              android:layout_marginTop="15dp"
+              android:id="@+id/soundeffect"/>
+
+          <Switch
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:id="@+id/switchbutton2"
+              android:layout_below="@id/switchbutton1"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Vibration Alert"
+              android:textColor="#fff"
+              android:layout_below="@+id/soundeffect"
+              android:layout_marginTop="16dp"
+              android:id="@+id/vibration_alert"/>
+
+          <Switch
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginEnd="10dp"
+              android:id="@+id/switchbutton3"
+              android:layout_below="@+id/switchbutton2"/>
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:src="@drawable/dotted"
+              android:layerType="software"
+              android:layout_marginTop="11dp"
+              android:layout_below="@+id/switchbutton3"
+              android:layout_alignRight="@+id/switchbutton3"
+              android:layout_alignEnd="@+id/switchbutton3"
+              android:id="@+id/imageView" />
+
+
+      </RelativeLayout>
+
+
+
+</FrameLayout>
